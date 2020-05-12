@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Blindness Game</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style type="text/css">
+	html,body{
+		background-image: url(https://images.unsplash.com/photo-1517707711963-adf9078bdf01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+		background-repeat: no-repeat;
+		background-position: center;
+        background-attachment: fixed;
+        background-size:cover;
+		color: white;
+		width: 100%;
+		height: 100%;
+	}
+	button{
+		letter-spacing: 8px;
+		display: inline-block;
+		padding: 14px 60px;
+		border-radius: 25px;
+		border: 0;
+		transition: 0.8s;
+	}
+	button:hover{
+		background: black;
+		color: white;
+	}
+	.content{
+         height: 100%;         
+         background-image: url('https://images.unsplash.com/photo-1539628399213-d6aa89c93074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+         background-size:cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-attachment: fixed;
+	}
+	.loader-wrapper{
+		position: fixed;
+		width: 100%;
+		height:100vh;
+		background: #fff
+		url('731.gif')
+		no-repeat center;
+		z-index: 9999;
+	}
+</style>
+<body>
+	<div class="loader-wrapper"></div>
+
+	<div class="content">
+		<div style="margin: 50px;position: absolute;top: 10%;">
+	    	<h4 style="display: block; margin-bottom: 20px; letter-spacing: 2px; font-weight: 200; margin-left: 21px;font-size: 3vw;"><SPAN style="color: red;">/</SPAN> WANT TO KNOW IF ? <SPAN style="color: red;">\</SPAN></h4>
+	    	<h4 style="display: block; margin-bottom: 20px; letter-spacing: 2px; font-weight: 200;font-size: 3vw;"><SPAN style="color: red;">/</SPAN> YOU'RE COLOR BLIND ? <SPAN style="color: red;">\</SPAN></h4>
+	    	<button style="outline: 0; margin: 90px; font-size: 3vw;"> PLAY </button>
+    	</div>
+	</div>
+	<section style="height: 100%">
+		<img style="width: 100%; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;" src="dev.jpg">
+	</section>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(window).on("load",function(){
+			$(".loader-wrapper").fadeOut("slow");
+		});
+	</script>
+</body>
+</html>
