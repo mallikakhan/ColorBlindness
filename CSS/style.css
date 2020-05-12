@@ -4,32 +4,18 @@ html,body{
 		height: 100%;
 		background-color: black;
 	}
-	button{
-		letter-spacing: 8px;
-		display: inline-block;
-		padding: 14px 60px;
-		border-radius: 25px;
-		border: 0;
-		transition: 0.8s;
-	}
-	button:hover{
-		background: black;
-		color: white;
-	}
-	.content{
+.heading{
+	display: block; 
+	margin-bottom: 20px; 
+	letter-spacing: 2px; 
+	font-weight: 200; 
+	font-size: 3vw;
+}
+.content{
          height: 100%;         
          background-image: url('https://images.unsplash.com/photo-1539628399213-d6aa89c93074?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
          background-size:cover;
          background-repeat: no-repeat;
          background-position: center;
          background-attachment: fixed;
-	}
-	.loader-wrapper{
-		position: fixed;
-		width: 100%;
-		height:100vh;
-		background: #fff
-		url('../Images/731.gif')
-		no-repeat center;
-		z-index: 9999;
-	}
+}
